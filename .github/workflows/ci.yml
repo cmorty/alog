@@ -26,6 +26,7 @@ jobs:
       - uses: whisperity/codechecker-analysis-action@v1
         id: codechecker
         with:
+          llvm-version: 16
           logfile: ${{ github.workspace }}/Build/compile_commands.json
           config: ${{ github.workspace }}/.codechecker.yml
 
